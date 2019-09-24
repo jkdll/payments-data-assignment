@@ -1,0 +1,2 @@
+src/infra/terraform/io-values-secrets.tfvars
+src/infra/terraform/.terraform
