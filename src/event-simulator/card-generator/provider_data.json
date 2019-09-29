@@ -1,0 +1,42 @@
+{
+   "distribution":{
+   		"visa16" : 0.4,
+   		"visa13" : 0.1,
+   		"mastercard": 0.3,
+   		"amex": 0.2
+   },
+
+   "provider":{
+      "visa16":{
+         "length":16,
+         "iin":[
+            "4"
+         ],
+         "validation":"luhn"
+      },
+      "visa13":{
+         "length":13,
+         "iin":[
+            "4"
+         ],
+         "validation":"luhn"
+      },
+      "mastercard":{
+         "length":16,
+         "iin":[
+            "51",
+            "52",
+            "53"
+         ],
+         "validation":"luhn"
+      },
+      "amex":{
+         "length":15,
+         "iin":[
+            "34",
+            "37"
+         ],
+         "validation":"luhn"
+      }
+   }
+}

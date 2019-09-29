@@ -1,2 +1,3 @@
 src/infra/terraform/io-values-secrets.tfvars
 src/infra/terraform/.terraform
+src/event-simulator/card-generator/__pycache__
