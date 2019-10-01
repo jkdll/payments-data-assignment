@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="flink-connector-kinesis_2.11-1.10-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/flink-master/flink-connectors/flink-connector-kinesis/target/flink-connector-kinesis_2.11-1.10-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/flink-master/flink-connectors/flink-connector-kinesis/target/original-flink-connector-kinesis_2.11-1.10-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
