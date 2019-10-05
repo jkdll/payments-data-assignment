@@ -45,3 +45,7 @@ variable "kinesis_fh_input_name" {
   default = "d-fh-payments-data-poc"
   type    = "string"
 }
+
+variable "security_group_id" {
+  default = "sg-bfe09ee6"
+}
