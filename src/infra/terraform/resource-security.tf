@@ -14,7 +14,8 @@ resource "aws_iam_role" "firehose_role" {
       "Principal": {
         "Service": [
           "firehose.amazonaws.com",
-          "redshift.amazonaws.com"
+          "redshift.amazonaws.com",
+          "elasticmapreduce.amazonaws.com"
         ]
       },
       "Effect": "Allow",
@@ -38,4 +39,14 @@ resource "aws_iam_role_policy_attachment" "imar_pa_redshift" {
 resource "aws_iam_role_policy_attachment" "iamr_pa_s3" {
   role       = "${aws_iam_role.firehose_role.name}"
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+}
+
+resource "aws_iam_role_policy_attachment" "iamr_pa_emr" {
+  role       = "${aws_iam_role.firehose_role.name}"
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceRole"
+}
+
+resource "aws_iam_instance_profile" "emr_profile" {
+  name = "emr_profile"
+  role = "${aws_iam_role.firehose_role.name}"
 }

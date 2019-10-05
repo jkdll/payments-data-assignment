@@ -3,3 +3,4 @@ src/infra/terraform/.terraform
 src/event-simulator/card-generator/__pycache__
 src/infra/terraform/infra_values.json
 src/infra/terraform/*.tfstate*
+src/infra/terraform/keys

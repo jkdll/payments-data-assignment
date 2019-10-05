@@ -14,3 +14,7 @@ resource "aws_secretsmanager_secret_version" "asm_redshift_secret_version" {
 }
 */
 
+resource "aws_key_pair" "keypair" {
+  key_name   = "kp-${var.module_name}"
+  public_key = "${file("${path.module}/keys/jkdll.pub")}"
+}
