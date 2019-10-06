@@ -49,6 +49,7 @@ variable "kinesis_fh_input_name" {
 variable "security_group_id" {
   default = "sg-bfe09ee6"
 }
+<<<<<<< HEAD
 
 variable "vpc_id" {
   default = "vpc-35069b4f"
@@ -57,3 +58,5 @@ variable "vpc_id" {
 variable "subnet_id" {
   default = "subnet-4e487241"
 }
+=======
+>>>>>>> 0c6597f698e332d14b68f2124b3f21fcc86cc2fd
