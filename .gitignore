@@ -4,5 +4,5 @@ src/event-simulator/card-generator/__pycache__
 src/infra/terraform/infra_values.json
 src/infra/terraform/*.tfstate*
 src/infra/terraform/keys
-src/flink-apps/flink-payments-poc/.idea
+src/flink-apps/flink-payments-poc/.idea/*
 src/flink-apps/flink-payments-poc/out
