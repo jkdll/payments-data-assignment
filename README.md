@@ -1,4 +1,6 @@
-# Payments Data PoC
+# Payments Data Assignment
+
+[alt text](doc/payments_data_poc.png)
 
 ## Requirements
 
