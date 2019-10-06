@@ -12,3 +12,9 @@ resource "aws_s3_bucket" "logging_bucket" {
     Environment = "${var.env}"
   }
 }
+
+resource "aws_s3_bucket_object" "object" {
+  bucket = "${aws_s3_bucket.logging_bucket.id}"
+  key    = "scripts/emr-bootstrap.sh"
+  source = "scripts/emr-bootstrap.sh"
+}
