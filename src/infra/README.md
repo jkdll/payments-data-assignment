@@ -24,4 +24,4 @@ The infrastructure deployed includes:
 - S3 Bucket containing the intermediate data published to Redshift
 - AWS EMR cluster
 
-![Infra Diagram](../doc/payments_data_poc.png)
+
