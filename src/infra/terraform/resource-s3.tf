@@ -14,8 +14,12 @@ resource "aws_s3_bucket" "logging_bucket" {
 }
 
 resource "aws_s3_bucket_object" "object" {
+<<<<<<< HEAD
   bucket = "${aws_s3_bucket.logging_bucket.id}"
 
+=======
+  bucket = "${var.env}-s3-${var.module_name}"
+>>>>>>> 0c6597f698e332d14b68f2124b3f21fcc86cc2fd
   key    = "scripts/emr-bootstrap.sh"
   source = "scripts/emr-bootstrap.sh"
 }
