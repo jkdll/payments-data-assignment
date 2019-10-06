@@ -58,10 +58,3 @@ The primary purpose of this task is to notify the risk team of any payment trans
 
 	- Immediately push such events to Kinesis using event type [PAYMENT_ALERT]
 
-### Visualisation:
-
-To visualize such activity, please use any tool of your choice. We are mainly interested in seeing a simple dashboard with all incoming payments, and a payment_alert count widget refreshing every 10s. This can be easily achieved by installing a local Metabase instance, connecting it to Redshift, build a dashboard and have the dashboard being refreshed every 10s. Another option would be to go through Kibana, but I don’t suggest you spend too much time on the visualization part since the scope of the task is more around the event handling side. 
-
-### Streaming:
-
-The above case is more around using managed services such as Kinesis and Redshift for simplicity, however please feel free to use another combination that you feel comfortable with such as NIFI/KAFKA/MYSQL foor e.g.
