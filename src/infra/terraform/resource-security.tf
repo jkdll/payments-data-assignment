@@ -50,7 +50,6 @@ resource "aws_iam_instance_profile" "emr_profile" {
   name = "emr_profile"
   role = "${aws_iam_role.firehose_role.name}"
 }
-<<<<<<< HEAD
 
 resource "aws_s3_bucket_policy" "b" {
   bucket = "${aws_s3_bucket.logging_bucket.id}"
@@ -72,5 +71,3 @@ resource "aws_s3_bucket_policy" "b" {
 }
 POLICY
 }
-=======
->>>>>>> 0c6597f698e332d14b68f2124b3f21fcc86cc2fd
